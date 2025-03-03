@@ -269,12 +269,32 @@ main {
     text-align: center;
 }
 
+/* Center Form Fields & Adjust Spacing */
 #contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
+/* Label Styling */
+#contact-form label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Required Field Indicator */
+#contact-form label .required {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Input & Textarea Styling */
 #contact-form input,
 #contact-form textarea {
     width: 100%;
@@ -284,12 +304,84 @@ main {
     font-size: 1rem;
     background: #222;
     color: var(--text-color);
+    margin-bottom: 5px;
 }
 
+/* Textarea Specific Adjustments */
 #contact-form textarea {
     resize: vertical;
     min-height: 120px;
 }
+
+/* Output Message Styling */
+output {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 3px;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+}
+
+/* Info Message Styling */
+.info {
+    color: var(--primary-color);
+    display: none; /* Initially hidden */
+}
+
+/* =======================
+   Contact Form Button
+======================= */
+#contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#contact-form button:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* =======================
+   Mobile Responsiveness
+======================= */
+@media (max-width: 768px) {
+    #contact-form {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #contact-form button {
+        max-width: 100%;
+    }
+}
+
 
 /* =======================
    Footer
