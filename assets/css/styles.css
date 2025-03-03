@@ -307,6 +307,13 @@ main {
     margin-bottom: 5px;
 }
 
+/* Placeholder Styling */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
 /* Textarea Specific Adjustments */
 #contact-form textarea {
     resize: vertical;
@@ -354,6 +361,23 @@ output {
 #contact-form button:hover {
     background: var(--accent-color);
     transform: translateY(-2px);
+}
+
+/* =======================
+   Fieldset Styling
+======================= */
+#contact-fieldset {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Legend Styling */
+#contact-fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
 }
 
 /* =======================

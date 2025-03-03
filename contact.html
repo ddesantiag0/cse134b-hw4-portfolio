@@ -23,7 +23,7 @@
     <section id="contact-form">
         <h2>Contact Form</h2>
         <form action="https://httpbin.org/post" method="POST">
-            <fieldset>
+            <fieldset id="contact-fieldset">
                 <legend>Send me a message</legend>
 
                 <!-- Hidden Bot Field -->
@@ -41,9 +41,9 @@
                 <label for="message">Message: <span class="required">*</span></label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <!-- Output Messages -->
-                <output id="error-message" class="error"></output>
-                <output id="info-message" class="info"></output>
+                <!-- Output Messages for Errors and Info -->
+                <output id="error-message" class="error" aria-live="polite"></output>
+                <output id="info-message" class="info" aria-live="polite"></output>
 
                 <!-- Submit Button -->
                 <button type="submit">Send</button>
