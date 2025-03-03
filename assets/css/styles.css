@@ -340,6 +340,15 @@ output {
     display: none; /* Initially hidden */
 }
 
+/* Validation Styles */
+input:invalid, textarea:invalid {
+    border: 2px solid red;
+}
+
+input:valid, textarea:valid {
+    border: 2px solid green;
+}
+
 /* =======================
    Contact Form Button
 ======================= */
