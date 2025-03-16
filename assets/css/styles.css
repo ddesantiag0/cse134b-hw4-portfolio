@@ -451,9 +451,6 @@ input:valid, textarea:valid {
     cursor: pointer;
     transition: background 0.3s ease;
     border-radius: 5px;
-    position: absolute;
-    right: 20px;
-    top: 15px;
 }
 
 #theme-toggle:hover {
